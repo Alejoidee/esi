@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativo ESI - Salud Sexual y Anticonceptivos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1580281657527-47e2482d8b94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Fondo de tema médico */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #343a40;
+            padding-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Capa de opacidad para legibilidad */
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        p.lead {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .text-center a:hover {
+            color: #007bff;
+        }
+
+        /* Animación de fade-in */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Botones flotantes para redes sociales */
+        .social-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 3;
+        }
+
+        .social-buttons a {
+            margin-left: 10px;
+            color: white;
+            padding: 10px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sección de información */
+        .info-section {
+            background-color: #ffffffd9;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Overlay para legibilidad sobre el fondo -->
+    <div class="background-overlay"></div>
+
+    <!-- Header -->
+    <div class="container fade-in">
+        <h1 class="text-center">Informativo ESI</h1>
+        <p class="lead text-center">La Educación Sexual Integral (ESI) te brinda las herramientas necesarias para tomar
+            decisiones informadas sobre tu salud sexual y reproductiva. En este sitio, encontrarás información clara y accesible sobre métodos anticonceptivos, prevención de infecciones de transmisión sexual (ITS), y cómo acceder a estos servicios de forma gratuita en tu comunidad.
+            <br><br>
+            Explora las distintas opciones de métodos anticonceptivos y descubre dónde conseguirlos en tu barrio. Aprende sobre las ITS, sus síntomas y métodos de prevención, y localiza centros de salud cercanos para pruebas y tratamiento. Nuestra misión es facilitar el acceso a recursos confiables que te ayuden a cuidar de tu salud sexual de manera responsable. Conéctate con la información y servicios que necesitas, y forma parte de una comunidad más informada y segura.
+        </p>
+    </div>
+
+    
+    <div class="container fade-in">
+        <div class="row justify-content-center">
+            
+            <div class="col-md-4 text-center">
+                <a href="-Métodos anticonceptivos/anticonceptivos.html">
+                    <img src="-Métodos anticonceptivos.jpg" alt="Métodos anticonceptivos" class="img-fluid">
+                    <h5 class="mt-3">Métodos Anticonceptivos</h5>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="-Métodos para prevenir ITS/its.html">
+                    <img src="-Enfermedades de transmisión sexual.jpg" alt="Centros de salud" class="img-fluid">
+                    <h5 class="mt-3">Centros de Salud</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
